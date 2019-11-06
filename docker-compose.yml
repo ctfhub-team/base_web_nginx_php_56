@@ -2,7 +2,7 @@ version: "2"
 services:
   web:
     build: .
-    image: ctftraining/base_image_nginx_php_56
+    image: ctftraining/base_web_nginx_php_56
     ports:
       - "127.0.0.1:8085:80"
     environment:

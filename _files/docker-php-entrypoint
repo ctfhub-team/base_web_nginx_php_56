@@ -10,4 +10,4 @@ nginx &
 
 echo "Running..."
 
-tail -F /dev/null
+tail -F /var/log/nginx/*.log
