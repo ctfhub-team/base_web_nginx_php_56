@@ -11,9 +11,9 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositorie
     && mv /tmp/flag.sh /flag.sh \
     && mv /tmp/docker-php-entrypoint /usr/local/bin/docker-php-entrypoint \
     && mv /tmp/nginx.conf /etc/nginx/nginx.conf \
+    && echo '<?php phpinfo();' > /var/www/html/index.php \
     && chown -R www-data:www-data /var/www/html \
     && chmod +x /usr/local/bin/docker-php-entrypoint \
-    && echo '<?php phpinfo();' > /var/www/html/index.php \
     # clear
     && rm -rf /tmp/*
     # && rm -rf /etc/apk
