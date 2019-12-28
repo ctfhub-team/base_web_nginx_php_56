@@ -1,6 +1,6 @@
 FROM php:5.6-fpm-alpine
 
-LABEL Organization="CTFTraining" Author="Virink <virink@outlook.com>"
+LABEL Organization="CTFHUB" Author="Virink <virink@outlook.com>"
 
 COPY _files /tmp/
 

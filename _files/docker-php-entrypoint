@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [[ -f /flag.sh ]]; then
-	source /flag.sh
+    source /flag.sh
 fi
 
 php-fpm &
